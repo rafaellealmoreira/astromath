@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculadora</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    
+    <div class="stars"></div>
+
+    <main class="page">
+
+        <section class="calculator">
+
+            
+            <header class="calculator-header">
+
+                <div class="brand">
+                    <div class="logo">⚡</div>
+
+                    <div>
+                        <h1>ASTRO<span>MATH</span></h1>
+                        <p>PRODUZIDA POR RAFAEL LEAL</p>
+                    </div>
+                </div>
+
+                <div class="astro">
+                    🤖
+                </div>
+
+            </header>
+
+
+           
+            <div class="display">
+
+              
+
+                <div id="previous-operation" class="previous-operation"></div>
+
+                <div id="current-operation" class="current-operation">
+                    0
+                </div>
+
+            </div>
+
+
+            
+            <div class="buttons">
+
+                
+                <button class="button clear" onclick="clearDisplay()">
+                    C
+                </button>
+
+                <button class="button delete" onclick="deleteLast()">
+                    ⌫
+                </button>
+
+                <button class="button operator" onclick="chooseOperator('%')">
+                    %
+                </button>
+
+                <button class="button operator" onclick="chooseOperator('/')">
+                    ÷
+                </button>
+
+
+               
+                <button class="button number" onclick="appendNumber('7')">
+                    7
+                </button>
+
+                <button class="button number" onclick="appendNumber('8')">
+                    8
+                </button>
+
+                <button class="button number" onclick="appendNumber('9')">
+                    9
+                </button>
+
+                <button class="button operator" onclick="chooseOperator('*')">
+                    ×
+                </button>
+
+
+                <button class="button number" onclick="appendNumber('4')">
+                    4
+                </button>
+
+                <button class="button number" onclick="appendNumber('5')">
+                    5
+                </button>
+
+                <button class="button number" onclick="appendNumber('6')">
+                    6
+                </button>
+
+                <button class="button operator" onclick="chooseOperator('-')">
+                    −
+                </button>
+
+
+                <button class="button number" onclick="appendNumber('1')">
+                    1
+                </button>
+
+                <button class="button number" onclick="appendNumber('2')">
+                    2
+                </button>
+
+                <button class="button number" onclick="appendNumber('3')">
+                    3
+                </button>
+
+                <button class="button operator" onclick="chooseOperator('+')">
+                    +
+                </button>
+
+
+               
+                <button class="button number zero" onclick="appendNumber('0')">
+                    0
+                </button>
+
+                <button class="button number" onclick="appendNumber('.')">
+                    .
+                </button>
+
+                <button class="button equals" onclick="calculate()">
+                    =
+                </button>
+
+            </div>
+
+
+
+   
+        <section class="presentation">
+
+          
+            <h2>
+                FAÇA<br>
+                SEU<br>
+                <span>CÁLCULO</span>
+            </h2>
+
+            <p>
+               HIDROS CONSULTORIA
+            </p>
+
+            <div class="tech-line"></div>
+
+            <small>
+                COMPUTAÇÃO • 2026
+            </small>
+
+        </section>
+
+    </main>
+
+
+   
+    <script src="script.js"></script>
+
+</body>
+
+</html>
